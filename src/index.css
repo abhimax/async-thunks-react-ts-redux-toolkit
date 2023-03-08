@@ -2,7 +2,7 @@
   --color-primary: #4044ee;
   --color-primary-hover: #4044ee;
   --color-bg: #0b0f19;
-  --color-black: #000000;
+  --color-bg2: #020306;
   --color-white: #ffffff;
   --base-border-radius: 0.2rem;
   --color-bray-1: #373737;
@@ -11,12 +11,13 @@
 body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  /* font-weight: 400; */
+  background-color: var(--color-bg2);
 }
 .main-wrapper {
   background-color: var(--color-bg);
   padding: 1.5rem;
   color: var(--color-white);
+  margin: 1.5rem;
 }
 .form-container,
 .table-wrapper {
@@ -28,7 +29,9 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.form-container {
+  border-bottom: 1px solid var(--color-bray-2);
+}
 .form-container button {
   width: 200px;
   box-sizing: border-box;
@@ -36,9 +39,11 @@ body {
   background-color: var(--color-primary);
   border-radius: var(--base-border-radius);
   border: none;
+  color: var(--color-white);
 }
 .form-container button:hover {
   background-color: var(--color-primary-hover);
+  cursor: pointer;
 }
 
 .form-container input {
